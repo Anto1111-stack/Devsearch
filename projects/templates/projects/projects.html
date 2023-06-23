@@ -3,16 +3,16 @@
 
 {% block content %}
 
-<p>Hello you are on the {{page}} page</p>
-<h1>Single Project Template</h1>
+<!--<p>Hello you are on the {{page}} page</p>-->
 
-{% if number > 10 %}
+<!--{% if number > 10 %}
 <p>Number is greater than 10</p>
 {% elif number == 10 %} 
 <p>Number is equal to 10</p>
 {% else %} 
 <p>Number is less than 10</p>
 {% endif %}
+-->
 
 <hr>
 
@@ -41,10 +41,11 @@
     {% endfor %}
 </table>
 
-<ul>
+<!--<ul>
     {% for project in projects %}
     <li>Title:<a href="{% url 'project' project.id %}">{{project.title}}</a></li>
     {% endfor %}
 </ul>
+-->
 
 {% endblock content %}
