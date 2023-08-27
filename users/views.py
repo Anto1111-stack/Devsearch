@@ -63,7 +63,7 @@ def registerUser(request):
             )
 
     context = {'page':page, 'form': form}
-    return render(request, 'users/login_register.html')
+    return render(request, 'users/login_register.html', context)
 
 
 def profiles(request):
